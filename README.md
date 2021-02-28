@@ -1,1 +1,1 @@
-# Object-oriented-programming-FMI
+# Обектно-ориентирано програмиране - ФМИ 2020/2021
