@@ -13,13 +13,16 @@ struct Matrix {
 void enterMatrix(Matrix& matrix) {
 	int n;
 	int m;
-
+    
+    cout << "Enter row count: ";
 	cin >> n;
+    cout << "Enter column count: ";
 	cin >> m;
 
 	matrix.n = n;
 	matrix.m = m;
 
+    cout << "Enter the matrix itself\n";
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < m; j++)
@@ -72,18 +75,20 @@ Matrix transposeMatrix(const Matrix& matrix) {
 
 
 int main() {
-    // Важно, така направена матрицата се заделя 
-    // място върху стековата рамка за 2*sizeof(int) (за m и n) + 101*101*sizeof(int)
+    // Важно, така направена матрицата се използва място от 
+    // стековата рамка за поне 2*sizeof(int) (за m и n) + 101*101*sizeof(int)
     // за всяка една матрица независимо дали е голяма или малка.
     Matrix m;
     enterMatrix(m);
 
-    printMatrix(m);
+    //printMatrix(m);
 
+    cout << "Transposed matrix: \n";
     printMatrix(transposeMatrix(m));
 
     Matrix toBeAdded;
     enterMatrix(toBeAdded);
+    cout << "Sum of te previously entered matrices: \n";
     printMatrix(addMatrices(m, toBeAdded));
 
     return 0;
