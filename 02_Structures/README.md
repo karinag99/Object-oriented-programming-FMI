@@ -50,6 +50,6 @@ void print(Point* point) {
     Point a;
     Point b = {1, 2};
 
-    //a.x става 1, a.x става 2
+    //a.x става 1, a.y става 2
     a = b;
 ```
