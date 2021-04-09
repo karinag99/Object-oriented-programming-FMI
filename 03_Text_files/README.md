@@ -9,6 +9,9 @@
     ### Пример
     ```cpp
     #include <fstream>
+    #include <iostream>
+
+    int main() {
 
     const char* filename = "test.txt";
 
@@ -19,6 +22,9 @@
     //...
 
     iFile.close();
+
+    return 0;
+    }
     ```
 
  - Режими 
