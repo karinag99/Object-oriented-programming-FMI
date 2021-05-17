@@ -4,3 +4,4 @@
 !*.md
 !*.png
 !.gitignore
+!*.h
